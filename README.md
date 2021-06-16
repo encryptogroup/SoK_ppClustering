@@ -18,7 +18,7 @@ All required dependencies to compile and run the project are available through t
 To use docker run the following:
 ```sh
 docker pull adishegde/sok-ppcluster:latest
-docker run -it sokppcluster
+docker run -it adishegde/sok-ppcluster:latest
 ```
 
 To locally build the docker image run the following:
