@@ -14,17 +14,24 @@ A brief description of the subdirectories in the codebase is given below. The RE
 ## Building the Project
 
 ### Docker
-
 All required dependencies to compile and run the project are available through the docker image.
-To use docker run the following from the root of the repository:
+To use docker run the following:
+```sh
+docker pull adishegde/sok-ppcluster:latest
+docker run -it sokppcluster
+```
 
+To locally build the docker image run the following:
 ```sh
 docker build -t sokppcluster .
-docker run -t -i -v $PWD:/code sokppcluster
-
-# The command below should be run inside the container.
-cd /code
+docker run -it sokppcluster
 ```
+
+We observed the build process to require at least 4GB RAM which must be explicitly set in case of Windows and MacOS.
+
+### Manual
+The code is written in C++17 and uses [`cmake`](https://cmake.org/).
+The `he_meanshift` and `hc_protocols` implementations have different external dependencies and can be built separately using the instructions given in their respective READMEs.
 
 ## Datasets
 

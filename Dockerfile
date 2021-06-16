@@ -51,4 +51,7 @@ RUN wget https://github.com/relic-toolkit/relic/archive/refs/tags/relic-toolkit-
 RUN apt-get install -y python3-pip
 RUN pip install numpy scikit-learn kneed
 
+COPY . /code
+WORKDIR /code
+
 CMD ["bash"]
