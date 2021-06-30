@@ -1,6 +1,6 @@
 # SoK: Efficient Privacy-preserving Clustering
 
-This repository contains the source code for the PETS'21 paper [HMS+21] by Aditya Hegde, Helen Möllering, Thomas Schneider, and Hossein Yalame.
+This repository contains the source code for the PETS'21 paper [HMS+21](https://eprint.iacr.org/2021/809) by Aditya Hegde, Helen Möllering, Thomas Schneider, and Hossein Yalame.
 
 ## Components
 
